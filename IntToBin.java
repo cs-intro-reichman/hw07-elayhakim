@@ -8,7 +8,13 @@ public class IntToBin {
 
     /** Returns the binary representation of the given integer, as a string of 0's and 1's.  */
     public static String toBinary(int x) {
-        //// Replace the following statement with your code
-        return "";
+        int y =x;
+        if (y==1) {
+            return "1";
+        }        
+        if (y==0) {
+            return "0";
+        }    
+        return toBinary(y/2)+ (y%2);
     }    
  }
